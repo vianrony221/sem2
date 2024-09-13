@@ -1,0 +1,28 @@
+/** Step one **/
+
+/** Step one **/
+
+/** Step two **/
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+}
+/** Step three **/
+h1{
+    font-size: 46px;
+    letter-spacing: 1.25px;
+    align-items: center;
+    color: rgb(23, 96, 77);
+}
+/** Step four **/
+p,a,li{
+    font-family:"Monoton",sans-serif;
+}
+/** Step five **/
+p span{
+    color: blueviolet;
+}
+/** Step six **/
+h3 {
+    font-size: 3em;
+    text-shadow: 4px 3px 4px rgba(0,0,0,.7);
+}
