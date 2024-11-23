@@ -1,0 +1,170 @@
+html{scroll-behavior: smooth;}
+body{margin: 0%;}
+
+/*Masthead*/
+h2,h3,h4,h5,h6,a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.masthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/candy-corn-masthead2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid #0e0e0e;
+    position: relative;
+}
+
+    .masthead::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); 
+        z-index: 1;
+    }
+
+    .masthead h1 {
+        font-size: 7vh;
+        text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.7);
+        color: #fff; 
+        z-index: 2; 
+        position: relative;
+    }
+
+.infomation{
+    display: flex;
+    flex-direction: column;
+    background: #fae929;
+    background: -moz-linear-gradient(top right, rgba(250, 233, 41,.5), rgba(255, 129, 52, .7));
+}
+/* Video Frame*/
+.video-section {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Makes the section take up full viewport height */
+    text-align: center; /* Centers the heading and iframe */
+}
+/*Fun Facts*/
+
+.fun-facts{
+    margin: 1.25vh 0vh;
+    padding: 0;
+    border-bottom: solid #0e0e0e;
+}
+.fun-facts div{
+    margin-left: 1%;
+}
+.fun-facts h3{
+    font-size: 1.25em;
+    margin: 1%;
+}
+
+/*Fancy Checkboxes*/
+
+
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    height: 38em;
+   justify-content: center;
+}
+.info-container h3{
+    font-size: 2.5vh;
+}
+.info-container label{
+    font-size: 2.75vh;
+    box-shadow: inset 0 0 0 0 #0e0e0e;
+    text-align: center;
+    border: solid #0e0e0e;
+    margin-bottom: 3vh;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.info-container label:hover{
+    box-shadow: inset 10em 0 0 0 #0e0e0e;
+    color: #ff8134;
+    cursor: pointer;
+}
+.info-container input{
+    opacity: 0;
+}
+#check-nutrit ~ div{
+    margin: 4%;
+    opacity: 0;
+    transition: 0.5s;
+}
+#check-about ~ div{
+    margin: 4%;
+    opacity: 1;
+    transition: 0.5s;
+}
+#check-contact ~ div{
+    margin: 4%;
+    opacity: 0;
+    transition: 0.5s;
+}
+#check-nutrit:checked ~ div{
+    opacity: 1;
+    transition: 0.5s;
+}
+#check-about:checked ~ div{
+    opacity: 0;
+    transition: 0.5s;
+}
+#check-contact:checked ~ div{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+/*Footer*/
+
+footer{
+    height: 10vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;    
+    background-color: #0e0e0e;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div a img{
+    height: 10vh;
+    width: 6vh;
+}
+nav a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 5vh;
+    margin: 0% 9%;
+    box-shadow: inset 0 0 0 0 #0e0e0e;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+nav a:link{
+    color: #ff8134;
+}
+nav a:visited{
+    color:#ff8134;
+}
+nav a:hover{
+    box-shadow: inset 10em 0 0 0 #fae929;
+    color: #0e0e0e;
+}
+.logo {
+    width: 80%; 
+    height: auto; 
+    max-width: 250px; 
+}
+
