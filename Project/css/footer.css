@@ -1,0 +1,45 @@
+
+.footer{
+  margin-top: -4px;
+  width: auto;
+  clear:both;
+  border-top: 4mm groove #07101b;
+}
+
+.socials{
+    text-align: center;
+    background-color: black;
+    padding:30px;
+}
+.footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 100px;
+    padding-bottom: 0px;
+    margin-top:200px;
+  }
+  
+  .footer a:hover {
+    color: #FF4C00;
+  }
+.footer h3{
+    color: #FFFFFF;  
+    padding-top:20px;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .socials {
+      padding: 20px;
+    }
+  
+    .footer a {
+      padding: 10px;
+      margin-top: 20px;
+    }
+  
+    .footer h3 {
+      padding-top: 10px;
+      font-size: 18px;
+    }
+  }

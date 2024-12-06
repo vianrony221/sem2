@@ -1,0 +1,225 @@
+body{
+    margin: 0px;
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Condensed', sans-serif;
+  }
+  p,a,li,figcaption{
+  font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  /* Video and masthead text */
+
+.homevideo h1{
+    text-align: center;
+    font-size: 6rem;
+    z-index: 1;
+    opacity: 0.8;
+    color: #FFFFFF;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+    margin-top: 290px;
+    font-family: 'Merriweather', serif;
+    
+}
+#homevideo{
+    height: 1000px;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.homevideo p{
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+    opacity: 0.8;
+    color: #FFFFFF;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+}
+
+@media only screen and (max-width: 600px) {
+    .homevideo h1 {
+      font-size: 3rem;
+      margin-top: 100px;
+    }
+  
+    #homevideo {
+      height: 500px;
+    }
+  
+    .homevideo p {
+      font-size: 1.5rem;
+    }
+  }
+
+
+
+
+/* 3 items display */
+.threeitems {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 485px;
+    background: linear-gradient(-50deg, #B51F1F 30%, #F5E1C5 80%);
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-top: 4mm groove #07101b;
+    border-bottom: 4mm groove #07101b;
+    padding-bottom: 150px;
+}
+
+.threeitems::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.largeCup{
+    width: 33vh;
+    height: auto;
+    z-index: 1;
+    grid-column: 1;
+}
+.sweatShirt{
+    width: 33vh;
+    height: auto;
+    z-index: 1;
+    grid-column: 2;
+}
+.keyChain{
+    width: 33vh;
+    height: auto;
+    z-index: 1;
+    grid-column: 3;
+}
+.threeitems img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom:100px;
+    z-index: 2;
+}
+.largeCuptxt{
+    grid-row: 2;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+    font-size: 4vh;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+    margin-top: -40px;
+    letter-spacing: 4px;
+}
+.sweatShirttxt{
+    grid-row: 2;
+    color: #FFFFFF;
+    z-index: 2;
+    font-size: 4vh;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+    margin-top: -40px;
+    letter-spacing: 4px;
+}
+.keyChaintxt{
+    grid-row: 2;
+    color: #FFFFFF;
+    z-index: 2;
+    font-size: 4vh;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+    margin-top: -40px;
+    letter-spacing: 4px;
+}
+.largeCuptxtdsc{
+    grid-row: 3;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+    font-size: 1.8vh;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+    margin-top: -40px;
+    letter-spacing: 2px;
+}
+.sweatShirttxtdsc{
+    grid-row: 3;
+    color: #FFFFFF;
+    z-index: 2;
+    font-size: 1.8vh;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+    margin-top: -40px;
+    letter-spacing: 2px;
+}
+.keyChaintxtdsc{
+    grid-row: 3;
+    color: #FFFFFF;
+    z-index: 2;
+    font-size: 1.8vh;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+    margin-top: -40px;
+    letter-spacing: 2px;
+}
+
+
+/* threeitems */
+@media only screen and (max-width: 600px) {
+.threeitems {
+    display: block;
+    margin-top: 150px;
+    padding-bottom: 50px;
+  }
+  .threeitems img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+  .largeCuptxt,
+  .sweatShirttxt,
+  .keyChaintxt {
+    font-size: 3vh;
+    margin-top: -20px;
+  }
+  .largeCuptxtdsc,
+  .sweatShirttxtdsc,
+  .keyChaintxtdsc {
+    font-size: 1.2vh;
+    margin-top: -20px;
+  }
+}
+
+
+/* banner */
+
+.bannerimg{
+width:100%;
+height:70vh;
+filter: brightness(90%);
+}
+.bannerimg:hover{
+    filter: brightness(50%);
+}
+
+@media only screen and (max-width: 600px) {
+.bannerdiv{
+    border-bottom: 4mm groove #07101b;
+}
+.bannerimg{
+    width:100%;
+    height:30vh;
+    filter: brightness(90%);
+}
+.bannerimg:hover{
+    filter: brightness(50%);
+}
+}
+

@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    background: linear-gradient(-50deg, #FF4C00 30%, #002147 50%);  
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  p, a, li, figcaption {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  h2 {
+    font-size: 45px;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  .product {
+    margin-top: -20px;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100%;
+  }
+  
+  .prodbanner {
+    width: 100%;
+    height: auto;
+    border-bottom: 4mm groove #07101b;
+  }
+  
+  section + section {
+    margin-top: 0;
+  }
+  
+  section > figure > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  .imgname {
+    font-size: 30px;
+    margin-top: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .smallpics {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+  }
+  
+  .smallpics li {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .smallpics li img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; 
+  }
+  
+  .smallpics li:hover{
+    cursor: pointer;
+    filter: brightness(50%);
+  }
+  
+  .producttxt {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.8);
+    min-height: 100%;
+  }
+  
+  .prodinf {
+    margin-top: 50px;
+  }
+  
+  .prodinf p {
+    font-size: 20px;
+  }
+  
+  .soldout {
+    margin-top: 50px;
+  }
+  
+  .soldout p {
+    font-size: 20px;
+  }
+  .main{
+    width: 100%;
+    height:auto;
+  }
+  .jetspeed{
+    padding-bottom: 50px;
+    max-width: 100%;
+  }
+
+  .masthead {
+    position: relative;
+    width: 100%;
+  }
+  
+  .masthead-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .masthead-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+  }
+  
+
+  
+  @media (min-width: 600px) {
+    .product {
+      width: 50%;
+      float: left;
+    }
+  
+    .prodinf {
+      margin-top: 50px;
+    }
+
+    .soldout {
+      margin-top: 75px;
+    }
+    .main{
+        width:20vw;
+        height:auto;
+    }
+    .masthead-text h1 {
+        font-size: 5rem;
+      }
+  }
+
+
+
+
+
+
